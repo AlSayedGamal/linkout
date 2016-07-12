@@ -22,7 +22,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'linkout'
+profile = Linkout.new "https://linkedin.com/in/some-profile"
+puts profile.name  #=> "Some name"
+puts profile.basic_info[:current_title]  #=> "Some title"
+```
+
 
 ## Development
 
