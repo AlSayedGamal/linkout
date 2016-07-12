@@ -1,8 +1,7 @@
 # Linkout
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/linkout`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome to your linkout gem! Since linkedin no more allows normal developers to have access to full profile.
+linkout is the gem used to allow you to scrap linkedin profile pages freely.
 
 ## Installation
 
@@ -22,7 +21,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'linkout'
+profile = Linkout.new "https://linkedin.com/in/some-profile"
+puts profile.name  #=> "Some name"
+puts profile.basic_info[:current_title]  #=> "Some title"
+```
+
 
 ## Development
 
