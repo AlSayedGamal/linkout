@@ -17,5 +17,27 @@ describe Linkout do
   	expect(profile.basic_info[:current_location]).to eq "Egypt"
   	expect(profile.basic_info[:current_industry]).to eq "Information Technology and Services"
   end
+  it 'should have experiences in full info' do
+    expect(profile.full_info.has_key? :experiences).to be true
+  end
+  
+  it 'should have languages in full info' do
+    expect(profile.full_info.has_key? :languages).to be true
+  end
 
+  it 'should have educations in full info' do
+    expect(profile.full_info.has_key? :educations).to be true
+  end
+  
+  it 'should have projects in full info' do
+    expect(profile.full_info.has_key? :projects).to be true
+  end
+  
+  it 'should have courses in full info' do
+    expect(profile.full_info.has_key? :courses).to be true
+  end
+
+  it 'should have certifications in full info' do
+    expect(profile.full_info.has_key? :certifications).to be true
+  end
 end
