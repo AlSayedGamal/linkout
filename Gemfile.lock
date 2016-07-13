@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    linkout (0.1.0)
+    linkout (0.1.1)
       nokogiri (~> 1.6, >= 1.6.8)
       sanitize (~> 4.0, >= 4.0.1)
 
